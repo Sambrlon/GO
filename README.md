@@ -66,6 +66,6 @@ Save it and try to execute (you should be in helloworld directory)
 ```
 $ go run Hello.go
 ```
-If use the result --- perfect :)
+If you see the result --- perfect :)
 
 Hope, It'll be useful for GoLang istallation on Ubuntu17.
