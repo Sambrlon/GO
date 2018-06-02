@@ -62,9 +62,9 @@ func main() {
 	fmt.Println("Hello, World!")
 }
 ```
-Save it and try to execute (yo should be in helloworld directory)
+Save it and try to execute (you should be in helloworld directory)
 ```
-$ go run hellowrold
+$ go run Hello.go
 ```
 If use the result --- perfect :)
 
