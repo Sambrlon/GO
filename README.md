@@ -26,7 +26,7 @@ $  vscode /etc/profile
 export PATH=$PATH:/usr/local/go/bin
 ```
 
-Also add this path to /etc/basrc with next command (for vscode /etc/bashrc I have warning message and therefore use sudo nano)
+Also add this path to /etc/bashrc with next command (for vscode /etc/bashrc I have warning message and therefore use sudo nano)
 ```
 $ sudo nano /etc/bashrc
 ```
