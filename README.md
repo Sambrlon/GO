@@ -28,7 +28,7 @@ export PATH=$PATH:/usr/local/go/bin
 
 Also add this path to /etc/basrc with next command (for vscode /etc/bashrc I have warning message and therefore use sudo nano)
 ```
-sudo nano /etc/basrc
+$ sudo nano /etc/bashrc
 ```
 
 Save it and update your source
@@ -44,7 +44,7 @@ After that make working directory with src folder and try to start HelloWorld.go
 $ mkdir workplace/src/helloworld
 $ cd workplace/src/helloworld
 ```
-Add GOPATH to /etc/basrc and /etc/profile (like above) for regular use
+Add GOPATH to /etc/bashrc and /etc/profile (like above) for regular use
 ```
 $  export GOPATH=$HOME/workplace/
 ```
