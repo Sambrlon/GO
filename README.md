@@ -11,3 +11,61 @@ Use that command
 ```
 $  sudo curl -O https://storage.googleapis.com/golang/go1.10.2.linux-amd64.tar.gz
 ```
+Next unpack this archive in local folder
+```
+$ sudo tar -xvf go1.10.2.linux-amd64.tar.gz
+$ sudo mv go /usr/local
+```
+
+I use VSCODE and therefore execute command with vscode for path variables setting. Just execute this command in terminal and add export part in the end of /etc/profile file
+
+```
+$  vscode /etc/profile
+```
+```
+export PATH=$PATH:/usr/local/go/bin
+```
+
+Also add this path to /etc/basrc with next command (for vscode /etc/bashrc I have warning message and therefore use sudo nano)
+```
+sudo nano /etc/basrc
+```
+
+Save it and update your source
+```
+$ source /etc/profile
+```
+Then restart your machine and check the version (shold work)
+```
+$ go version
+```
+After that make working directory with src folder and try to start HelloWorld.go project
+``` 
+$ mkdir workplace/src/helloworld
+$ cd workplace/src/helloworld
+```
+Add GOPATH to /etc/basrc and /etc/profile (like above) for regular use
+```
+$  export GOPATH=$HOME/workplace/
+```
+Make Hello.go in helloworld directory
+```
+$ vscode Hello.go
+```
+Type next code in VSCode
+```
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, World!")
+}
+```
+Save it and try to execute (yo should be in helloworld directory)
+```
+$ go run hellowrold
+```
+If use the result --- perfect :)
+
+Hope, It'll be useful for GoLang istallation on Ubuntu17.
